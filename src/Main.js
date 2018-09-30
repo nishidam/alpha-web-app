@@ -8,6 +8,7 @@ import {
 import Home from "./contents/Home";
 import Stuff from "./contents/Stuff";
 import Contact from "./contents/Contact";
+import ImgEarlyTimes from "./images/early-times.png";
 
 
 class Main extends Component {
@@ -15,12 +16,14 @@ class Main extends Component {
         return (
             <HashRouter>
                 <div>
-                    <h1>Simple SPA</h1>
-                    <ul className="header">
-                        <li><NavLink to="/Home">Home</NavLink></li>
-                        <li><NavLink to="/stuff">Stuff</NavLink></li>
-                        <li><NavLink to="/contact">Contact</NavLink></li>
-                    </ul>
+                    <header>
+                        <img src={ImgEarlyTimes} className="mainLogo" />
+                        <ul>
+                            <li><NavLink to="/Home">Home</NavLink></li>
+                            <li><NavLink to="/stuff">Stuff</NavLink></li>
+                            <li><NavLink to="/contact">Contact</NavLink></li>
+                        </ul>
+                    </header>
                     <div className="content">
                         <Route path="/Home" component={Home} />
                         <Route path="/stuff" component={Stuff} />

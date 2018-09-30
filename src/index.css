@@ -1,29 +1,39 @@
 body {
-  background-color: #FFCC00;
-  padding: 20px;
+  background-color: #f9ebd1;
   margin: 0;
+  align-content: center;
+  text-align: center;
 }
 h1, h2, p, ul, li {
   font-family: sans-serif;
 }
-ul.header li {
+header {
+  background-color: #000;
+    text-align: left;
+
+}
+header img {
+  padding: 20px;
+  display: inline;
+}
+header ul{
+    display: inline;
+}
+header ul li {
   display: inline;
   list-style-type: none;
+  align-items: flex-end;
   margin: 0;
 }
-ul.header {
-  background-color: #111;
-  padding: 0;
-}
-ul.header li a {
+header li a {
   color: #FFF;
   font-weight: bold;
   text-decoration: none;
-  padding: 20px;
+  padding: 10px;
   display: inline-block;
 }
+
 .content {
-  background-color: #FFF;
   padding: 20px;
 }
 .content h2 {
@@ -34,5 +44,5 @@ ul.header li a {
   margin-bottom: 10px;
 }
 .active {
-  background-color: #0099FF;
+  background-color: #58656e;
 }
